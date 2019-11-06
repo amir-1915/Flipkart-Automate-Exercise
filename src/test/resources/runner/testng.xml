@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Flipkart Automate">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.amir.listeners.CustomListeners" />
+	</listeners>
+
+	<test name="Login Correct Password Test">
+		<classes>
+			<class name="com.amir.testcases.LoginCorrectPasswordTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Search Item Test">
+		<classes>
+			<class name="com.amir.testcases.SearchItemTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Add To Cart Test">
+		<classes>
+			<class name="com.amir.testcases.AddToCartTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="My Cart Test">
+		<classes>
+			<class name="com.amir.testcases.MyCartTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
